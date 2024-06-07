@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.social{
+    display: flex;
+    gap: 15px;
+    flex: 1;
+}
+.logo{
+    color: #dbb77d;
+    flex: 1;
+    text-align: center;
+    font-size: 60px; 
+    font-weight: bold;
+    letter-spacing: 0.2em; 
+    font-family: 'Amiri', serif; 
+    align-items: center;
+    padding-right: 50px;
+ 
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;   
+    flex: 1;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1280px) {
+    .logo{
+        font-size: 32px;
+    }
+    .links{
+        font-size: 18px;
+        gap: 15px;
+
+    }
+}
+@media screen and (max-width:1024px) {
+    .social{
+        display:none;
+    }
+    .logo{
+        text-align: left;
+
+    }
+}
+@media screen and (max-width:768px) {
+    .logo{
+        font-size: 24px;
+
+    }
+}
+@media screen and (max-width:640px) {
+    .links{
+        margin:115%;
+    }
+    .link{
+        display:none;
+    }
+}
