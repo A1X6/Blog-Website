@@ -8,8 +8,9 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <Image src="/logo.png" alt="lama blog" width={50} height={50} />
-          <h1 className={styles.logoText}>Lamablog</h1>
+          <Image src="/Ghandy.jpg" alt="" width={50} height={50}   style={{ borderRadius: '50%' }} 
+          />
+          <h1 className={styles.logoText}>مخيمر</h1>
         </div>
         <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -34,10 +35,12 @@ const Footer = () => {
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
-          <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
+          <Link href="/">مقالات</Link>
+          <Link href="/">قصص قصيرة</Link>
+          <Link href="/">شعر </Link>
+          <Link href="/">سينما</Link>
+          <Link href="/">تاملات هرطقات</Link>
+
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Social</span>

@@ -11,13 +11,12 @@ const Card = () => {
       <div className={styles.textContainer}>
         <div className={styles.detail}>
           <span className={styles.date}>10-11-2024 - </span>
-          <span className={styles.category}>Category</span>
+          <span className={styles.category}>مقالات</span>
         </div>
         <Link href="#">
           <h1>
-            رحلة في دهاليز الفكر الداكن واستكشاف أغوار العقول والتأمل في أسرار
-            الوجود الحياة الخفية
-          </h1>
+          سنونو واحد لا يصنع الربيع 
+                   </h1>
         </Link>
         <p className={styles.desc}>
           الجميلة والوقح أسفرت وسائل التناحر الاجتماعي عن انتشار إحدى مقاطع

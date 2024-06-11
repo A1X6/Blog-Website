@@ -15,11 +15,10 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>سينما</span>
           <h3 className={styles.postTitle}>
-            رحلة في دهاليز الفكر الداكن واستكشاف أغوار العقول والتأمل في أسرار
-            الوجود الحياة الخفية
+          سنونو واحد لا يصنع الربيع
           </h3>
           <div className={styles.details}>
-            <span className={styles.username}>Ahmed </span>
+            <span className={styles.username}>Auther </span>
             <span className={styles.date}>10-10-2024</span>
           </div>
         </div>
@@ -34,11 +33,10 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>سينما</span>
           <h3 className={styles.postTitle}>
-            رحلة في دهاليز الفكر الداكن واستكشاف أغوار العقول والتأمل في أسرار
-            الوجود الحياة الخفية
+                        سنونو واحد لا يصنع الربيع
           </h3>
           <div className={styles.details}>
-            <span className={styles.username}>Ahmed </span>
+            <span className={styles.username}>Auther </span>
             <span className={styles.date}>10-10-2024</span>
           </div>
         </div>
@@ -52,11 +50,10 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>سينما</span>
           <h3 className={styles.postTitle}>
-            رحلة في دهاليز الفكر الداكن واستكشاف أغوار العقول والتأمل في أسرار
-            الوجود الحياة الخفية
+                        سنونو واحد لا يصنع الربيع
           </h3>
           <div className={styles.details}>
-            <span className={styles.username}>Ahmed </span>
+            <span className={styles.username}>Auther </span>
             <span className={styles.date}>10-10-2024</span>
           </div>
         </div>
@@ -70,11 +67,10 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>سينما</span>
           <h3 className={styles.postTitle}>
-            رحلة في دهاليز الفكر الداكن واستكشاف أغوار العقول والتأمل في أسرار
-            الوجود الحياة الخفية
+                        سنونو واحد لا يصنع الربيع
           </h3>
           <div className={styles.details}>
-            <span className={styles.username}>Ahmed </span>
+            <span className={styles.username}>Auther </span>
             <span className={styles.date}>10-10-2024</span>
           </div>
         </div>

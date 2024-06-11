@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './categoryList.module.css';
+import styles from './CategoryList.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -23,7 +23,7 @@ const CategoryList =()=>{
                 <Image src="/article.jpg" alt="article" width={32} height={32} className={styles.image}/>مقالات
             </Link>
             <Link href={'/blog'} className={`${styles.category} ${styles.Heresies}`}>
-                <Image src="/Heresies.png" alt="Heresies" width={32} height={32} className={styles.image}/>منوعات وهرطقات
+                <Image src="/Heresies.png" alt="Heresies" width={32} height={32} className={styles.image}/>تأملات وهرطقات
             </Link>
         </div>
         </div>
