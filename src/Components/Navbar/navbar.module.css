@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    padding-right: 50px;
+
 }
 .social{
     display: flex;
@@ -56,9 +58,10 @@
 }
 @media screen and (max-width:640px) {
     .links{
-        margin:115%;
+        margin:115px;
     }
     .link{
         display:none;
     }
+
 }

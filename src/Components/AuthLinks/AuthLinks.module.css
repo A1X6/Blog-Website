@@ -38,7 +38,7 @@ font-weight: bold;
     .burger {
         display: flex;
     }
-    .link{
+    .Link{
         display: none;
     }
 }

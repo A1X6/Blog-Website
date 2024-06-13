@@ -1,21 +1,21 @@
 "use client"
 
-import styles from './authLinks.module.css';
+import styles from './AuthLinks.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
   // TEMP
-  const status = "notauthenticated"; 
+  const status = "authenticated"; 
 
   return (
     <>
       {status === "notauthenticated" ? (
-        <Link href="/Login" className={styles.link}>Login</Link>
+        <Link href="/login" className={styles.link}>Login</Link>
       ) : (
         <>
-          <Link href="/Write" className={styles.link}>Write</Link>
+          <Link href="/write" className={styles.link}>Write</Link>
           <span className={styles.link}>Logout</span>
         </>
       )}
@@ -32,10 +32,10 @@ const AuthLinks = () => {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
           {status === "notauthenticated" ? (
-            <Link href="/Login">Login</Link>
+            <Link href="/login">Login</Link>
           ) : (
             <>
-              <Link href="/Write">Write</Link>
+              <Link href="/write">Write</Link>
               <span className={styles.link}>Logout</span>
             </>
           )}

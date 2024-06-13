@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './navbar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import AuthLinks from '../AuthLinks/AuthLinks';
+import AuthLinks from "@/Components/AuthLinks/AuthLinks";
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 

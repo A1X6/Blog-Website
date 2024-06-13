@@ -12,7 +12,7 @@ const ThemeProvider = ({ children }) => {
   }, []);
 
   if (!mounted) {
-    return null; // Ensure nothing is rendered on the server-side or before mounting
+    return null; 
   }
 
   return <div className={theme}>{children}</div>;

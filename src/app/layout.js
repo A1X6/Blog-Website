@@ -6,6 +6,7 @@ import ThemeContextProvider from "@/Context/ThemeContext";
 import ThemeProvider from "@/Providers/ThemeProvider";
 import AuthProvider from "@/Providers/AuthProvider";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
