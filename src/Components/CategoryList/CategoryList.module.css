@@ -1,80 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap");
 
 .title {
-    margin: 50px 0px;
-    padding-top: 75px;
-    /* text-decoration: underline; */
-    text-align: center; /* Center align the title for better presentation */
+  margin: 50px 0px;
+  padding-top: 75px;
+  /* text-decoration: underline; */
+  text-align: center; /* Center align the title for better presentation */
 }
 
 .categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
 }
 
 .category {
-
-      padding: 3px 8px;
-      font-size: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Reem Kufi', sans-serif;
-    width: max-content;
-    height: 50px;
-    justify-content: center;
-    border-radius: 10px;
-    text-align: center; 
+  padding: 3px 8px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Reem Kufi", sans-serif;
+  width: max-content;
+  height: 50px;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  flex-grow: 1;
+  min-width: 100px;
 }
 
-.category.style {
-    background-color: #57c4ff31;
+.category.cinema {
+  background-color: #57c4ff31;
 }
-.category.ShortStories{
-    background-color: #da85c731;
+.category.stories {
+  background-color: #da85c731;
+}
+.category.poetry {
+  background-color: #7fb88133;
+}
+.category.heresies {
+  background-color: #ffb04f45;
+}
+.category.articles {
+  background-color: #ff795736;
+}
+.category.podcast {
+  background-color: #e2644536;
+}
 
-}
-.category.poetry{
-    background-color: #7fb88133;
-
-}
-.category.Heresies{
-    background-color: #ffb04f45;
-
-}
-.category.article{
-    background-color: #ff795736;
-
-}
 
 .image {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-
 @media (max-width: 1200px) {
-    .category {
-        width: 22%; 
-    }
+  .category {
+    width: 22%;
+  }
 }
 
 @media (max-width: 992px) {
-    .category {
-        width: 30%; 
-    }
+  .category {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
-    .category {
-        width: 45%; 
-    }
+  .category {
+    width: 45%;
+  }
 }
 
 @media (max-width: 576px) {
-    .category {
-        width: 100%; 
-    }
+  .category {
+    width: 100%;
+  }
 }

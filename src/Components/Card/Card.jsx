@@ -2,30 +2,21 @@ import Image from "next/image";
 import styles from "./card.module.css";
 import Link from "next/link";
 
-const Card = () => {
+const Card = ({ key, item }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={key}>
       <div className={styles.imageContainer}>
-        <Image src="/snono.jpg" alt="" fill className={styles.image} />
+        <Image src={item.img} alt="" fill className={styles.image} />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.detail}>
-          <span className={styles.date}>10-11-2024 - </span>
-          <span className={styles.category}>مقالات</span>
+          <span className={styles.date}>{item.createdAt.split("T")[0]} - </span>
+          <span className={styles.category}>{item.cat}</span>
         </div>
         <Link href="#">
-          <h1>
-          سنونو واحد لا يصنع الربيع 
-                   </h1>
+          <h1>{item.title}</h1>
         </Link>
-        <p className={styles.desc}>
-          الجميلة والوقح أسفرت وسائل التناحر الاجتماعي عن انتشار إحدى مقاطع
-          الفيديو لبرنامج المواعدات الظلامية لشاب وفتاة بدي منظورهم للحياة والحب
-          غاية في الضيق والانحسار بالرغم من سعة فهمهم للواقع العملي والمادي. إلا
-          أنني لا أرى أي ضير جراء انبثاق مثل تلك الصراعات الفيسبوكية من آن إلى
-          آخر، بل تساهم أحيانا في بعض من إعادة النظر في تاريخ جنسنا الشقي حتما
-          عبر العصور.
-        </p>
+        <p className={styles.desc}>{item.desc}</p>
         <Link href="#" className={styles.link}>
           Read More
         </Link>
