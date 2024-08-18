@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/navigation";
 
 const WritePage = () => {
     const { status } = useSession();
@@ -19,7 +19,7 @@ const WritePage = () => {
         return <div className={styles.loading}>Loading...</div>;
       }
     
-      if (status === "authenticated") {
+      if (status !== "authenticated") {
         router.push("/")
       }
 
