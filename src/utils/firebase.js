@@ -1,17 +1,33 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from 'firebase/app';
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
-// Your web app's Firebase configuration
+// Firebase configuration with real values
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE,
-  authDomain: "blog-ffd57.firebaseapp.com",
-  projectId: "blog-ffd57",
-  storageBucket: "blog-ffd57.appspot.com",
-  messagingSenderId: "1048543906871",
-  appId: "1:1048543906871:web:69603ef9b47353357943b2"
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'YOUR_AUTH_DOMAIN',
+  projectId: 'YOUR_PROJECT_ID',
+  storageBucket: 'YOUR_STORAGE_BUCKET',
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+  appId: 'YOUR_APP_ID',
+  measurementId: 'YOUR_MEASUREMENT_ID',
 };
 
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+// Initialize Firebase app
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider();
+
+// Function to handle Google sign-in
+export const signInWithGoogle = async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    // The signed-in user info
+    const { user } = result;
+    user.accessToken = "1234567890"
+    console.log('User info:', user);
+    // Redirect to home or perform further actions
+    return user;
+  } catch (error) {
+    console.error('Error during sign-in:', error);
+  }
+};

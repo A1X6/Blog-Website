@@ -1,20 +1,29 @@
-import CategoryList from "@/Components/CategoryList/CategoryList";
-import Featured from "@/Components/Featured/Featured";
-import CardList from "@/Components/CardList/CardList";
-import Menu from "@/Components/Menu/Menu";
-import styles from "./homepage.module.css";
-import Link from "next/link";
-export default function Home({ searchParams }) {
-  const page = parseInt(searchParams.page) || 1;
+"use client";
+
+import React from 'react'
+import { signInWithGoogle } from '@/utils/firebase'
+
+const page = () => {
+
+  // Handle Google login
+  const handleGoogleLogin = async () => {
+    try {
+      const user = await signInWithGoogle();
+      console.log('-------------------')
+      console.log(user)
+      console.log('-------------------')
+    } catch (error) {
+      console.log(error)
+    }
+
+  };
 
   return (
-    <div className={styles.container}>
-      <Featured />
-      <CategoryList />
-      <div className={styles.content}>
-        <CardList page={page} />
-        <Menu />
-      </div>
+    <div>
+      <h1>LOGIN SYSTEM</h1>
+      <button onClick={handleGoogleLogin}>Login with Google</button>
     </div>
-  );
+  )
 }
+
+export default page
